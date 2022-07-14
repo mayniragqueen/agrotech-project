@@ -1,5 +1,5 @@
 # Agrotech Project 2022
-Temporal and spatial temperature measurement in a greenhouse - Agrotech course final project.
+Measuring PAR outside and inside the greenhouse
 
 
 # Components
