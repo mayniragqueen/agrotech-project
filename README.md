@@ -3,6 +3,10 @@ Measuring PAR outside and inside the greenhouse
 
 
 # Components
+We used two different PAR sensors:
+
+![image](https://user-images.githubusercontent.com/106690258/179042812-0467437d-4fe9-498e-946a-37aa3475da90.png)
+![image](https://user-images.githubusercontent.com/106690258/179042928-c1f48bd9-3414-4488-9897-b3e738eae899.png)
 
 ## Building the circuit
 
