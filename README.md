@@ -51,11 +51,10 @@ void setup(void)
 {
   Serial.begin(9600);
   Serial.println("Hello!");
-
   Serial.println("Getting single-ended readings from AIN0..3");
   Serial.println("ADC Range: +/- 6.144V (1 bit = 3mV/ADS1015, 0.1875mV/ADS1115)");
 
-   ads.setGain(GAIN_SIXTEEN);    // 16x gain  +/- 0.256V  1 bit = 0.125mV  0.0078125mV
+  ads.setGain(GAIN_SIXTEEN);    // 16x gain  +/- 0.256V  1 bit = 0.125mV  0.0078125mV
 
   if (!ads.begin()) {
     Serial.println("Failed to initialize ADS.");
@@ -70,11 +69,10 @@ WiFi.disconnect();
   Serial.print("Connecting to ");
   Serial.println(ssid);
 
-    ThingSpeak.begin(client);
+  ThingSpeak.begin(client);
  
   WiFi.begin(ssid, password);
   
- 
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
@@ -84,7 +82,6 @@ WiFi.disconnect();
   Serial.println(ssid);
   Serial.println();
 }
-
 
 void loop(void)
 {
