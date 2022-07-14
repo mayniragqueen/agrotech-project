@@ -17,7 +17,8 @@ In order to build one measuring station we used the following parts:
 8. 1X Plastic Enclosure Electronic Box 
 
 the finnished board looked like this:
-![image](https://user-images.githubusercontent.com/106690258/178973089-7b1f00f6-0b6a-4b51-962a-977776c83575.png)
+
+![image](https://user-images.githubusercontent.com/106690258/178973247-748636ac-e6a3-4f68-8b36-018683267e40.png)
 
 
 ## Instructions
