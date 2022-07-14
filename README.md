@@ -13,13 +13,12 @@ In order to build one measuring station we used the following parts:
 4. 1X BreadBord
 5. 1X ADS1115 - ADC Analog to Digital Converter 
 6. 2X Two Wires Conectors
-7. 8X small Wires
+7. 8X small Wires (Male)
 8. 1X Plastic Enclosure Electronic Box 
-.
-Write here the equipment we used
-in order to assmble it on top of the prototype board we had to use some Male to Female mounts that were souldred to the board itself.
+
 the finnished board looked like this:
-IMAGE of the board
+![image](https://user-images.githubusercontent.com/106690258/178973089-7b1f00f6-0b6a-4b51-962a-977776c83575.png)
+
 
 ## Instructions
 Instructions how to build the system
