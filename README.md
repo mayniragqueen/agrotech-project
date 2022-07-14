@@ -33,6 +33,102 @@ the connections were made on the the board according to the schematics down belo
 
 
 # Code & Thingspeak
+#include <Adafruit_ADS1X15.h>
+#include <WiFi.h>
+#include "ThingSpeak.h"
+
+unsigned long myChannelNumber = 1769653;
+const char * myWriteAPIKey = "KEAKCMOH5FRZUJAZ";
+const char* ssid = "agrotech-lab-1"; // your wifi SSID name
+const char* password = "1Afuna2Gezer" ;// wifi pasword
+const char* server = "api.thingspeak.com";
+WiFiClient client;
+
+Adafruit_ADS1115 ads;  /* Use this for the 16-bit version */
+
+void setup(void)
+{
+  Serial.begin(9600);
+  Serial.println("Hello!");
+
+  Serial.println("Getting single-ended readings from AIN0..3");
+  Serial.println("ADC Range: +/- 6.144V (1 bit = 3mV/ADS1015, 0.1875mV/ADS1115)");
+
+   ads.setGain(GAIN_SIXTEEN);    // 16x gain  +/- 0.256V  1 bit = 0.125mV  0.0078125mV
+
+  if (!ads.begin()) {
+    Serial.println("Failed to initialize ADS.");
+    while (1);
+  }
+WiFi.disconnect();
+  delay(10);
+  WiFi.begin(ssid, password);
+
+  Serial.println();
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+
+    ThingSpeak.begin(client);
+ 
+  WiFi.begin(ssid, password);
+  
+ 
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.print("NodeMcu connected to wifi...");
+  Serial.println(ssid);
+  Serial.println();
+}
+
+
+void loop(void)
+{
+  int16_t adc0, adc1;
+  float volts0, volts1;
+
+  adc0 = ads.readADC_SingleEnded(0);
+  adc1 = ads.readADC_SingleEnded(1);
+
+  volts0 = ads.computeVolts(adc0);
+  volts1 = ads.computeVolts(adc1);
+  
+  int sum0=0;
+  float average0 = 0;
+  float par0;
+  int sum1=0;
+  float average1 = 0;
+  float par1;
+    for (int i = 0; i <= 6000; i++) {
+    adc0 = ads.readADC_SingleEnded(0);
+    sum0 += adc0;
+    adc1 = ads.readADC_SingleEnded(1);
+    sum1 += adc1;
+    Serial.print(adc0);
+    Serial.print(" ");
+    Serial.print(adc1);
+    Serial.print(" ");
+    Serial.println(i);
+    delay(10);
+    }
+  average0=sum0/6000;   //1 min 
+  par0=average0*0.897;
+  Serial.print("par0:");Serial.println(par0);
+  average1=sum1/6000;   //1 min 
+  par1=average1*1.017;
+  Serial.print("par1:");Serial.println(par1);
+  delay(10);
+ThingSpeak.setField(2,par1);
+ThingSpeak.setField(1,par0);
+ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);     
+ 
+  client.stop();
+ 
+}
+  
 ## Preperation
 in order to proceed with the code make sure the following libraries are installed:
 write here the libraries
