@@ -40,5 +40,7 @@ in order to proceed with the code make sure the following libraries are installe
 1. Adafruit_ADS1X15.h
 2. WiFi.h
 3. ThingSpeak.h
+In addition in order to get the PAR from the sensor we needed to calaulate the factor we multipliered with using the next equation:
+
 
 
