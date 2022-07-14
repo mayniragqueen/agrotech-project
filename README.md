@@ -37,6 +37,8 @@ the connections were made on the the board according to the schematics down belo
   
 ## Preperation
 in order to proceed with the code make sure the following libraries are installed:
-write here the libraries
+1. Adafruit_ADS1X15.h
+2. WiFi.h
+3. ThingSpeak.h
 
-upload the next code to the ESP32 in order to see the DS18B20 code:
+
