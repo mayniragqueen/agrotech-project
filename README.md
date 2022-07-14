@@ -22,7 +22,10 @@ the finnished board looked like this:
 
 
 ## Instructions
-Instructions how to build the system
+At first we coneccted the two RY-GH PHOTOSYNTHETICALLY EFFECTIVE RADIATION SENSORS to the breadbord by using the Wires Conectors. then we connected both Sensors to the ADS1115 (A1\A0 connections) with their red Wires and wrote on top of the sensors Which one is A1 and which sensor is A2. The Sensors white wire was connected to the ADS1115 GND. Then we connected the ADS1115 to our ESP32 using the following connections:
+VDD- No.19 VDD (3.3V)
+GND- No.41 GND
+SCL-
 
 ## Our Circuit Diagram
 the connections were made on the back of the board according to the schematics down below:
