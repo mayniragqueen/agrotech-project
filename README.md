@@ -144,7 +144,7 @@ in order to proceed with the code make sure the following libraries are installe
 2. WiFi.h
 3. ThingSpeak.h
 
-In addition in order to get the PAR value calibrated we needed to calaulate the factor using multiplied with the next equation:
+In addition in order to get the PAR value calibrated we needed to calaulate the factor using the next equation:
 
 ![image](https://user-images.githubusercontent.com/106690258/179368621-36eae3d2-d16f-4235-b652-ce90dced6720.png)
 
