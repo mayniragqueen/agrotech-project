@@ -139,7 +139,7 @@ ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);
 
   
 ## Preperation
-in order to proceed with the code make sure the following libraries are installed:
+Our code included the following libraries:
 1. Adafruit_ADS1X15.h
 2. WiFi.h
 3. ThingSpeak.h
