@@ -1,4 +1,4 @@
-# Agrotech Project 2022
+# Agrotech final Project 2022
 Measuring PAR outside and inside the greenhouse. PAR = Photosynthetically Active Radiation, the wavelengths of light within the visible range of 400 to 700 nanometers that are critical for photosynthesis.
 
 ![image](https://user-images.githubusercontent.com/106690258/179044073-31b28b74-fd6d-4be6-820d-0743e409548e.png)
@@ -13,7 +13,7 @@ Both of them are measuring PAR but they have different sensitivities
 ![image](https://user-images.githubusercontent.com/106690258/179042812-0467437d-4fe9-498e-946a-37aa3475da90.png)
 ![image](https://user-images.githubusercontent.com/106690258/179042928-c1f48bd9-3414-4488-9897-b3e738eae899.png)
 
-## Building the circuit
+## Our circuit
 
 In order to build one measuring station we used the following parts:
 
@@ -41,7 +41,7 @@ the connections were made on the the board according to the schematics down belo
 ![agrotech project](https://user-images.githubusercontent.com/106690258/179032479-2e69e00c-9ea2-48c6-b30d-cca44b3dfdd4.png)
 
 
-# Code & Thingspeak
+# Our code
 ```C++
 #include <Adafruit_ADS1X15.h>
 #include <WiFi.h>
