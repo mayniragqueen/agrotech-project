@@ -146,6 +146,10 @@ in order to proceed with the code make sure the following libraries are installe
 
 In addition in order to get the PAR from the sensor we needed to calaulate the factor we multipliered with using the next equation:
 
+![image](https://user-images.githubusercontent.com/106690258/179368621-36eae3d2-d16f-4235-b652-ce90dced6720.png)
+
+The number we calculated for the sensor with the 8.71 PAR sensetivity was multiplied withe the average measurements per minute in order to reduce the noise we observed in the graphs.
+
 # Data Analysis
 
 
