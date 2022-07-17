@@ -153,36 +153,32 @@ The number we calculated for the sensor with the 8.71 PAR sensetivity was multip
 # Data Analysis
 ## Our MATLAB code
 ```MATLAB
-% Read traffic data for the past day from a ThingSpeak channel and 
-% visualize hourly number of cars using the AREA function. 
+% Read PAR data past day from a ThingSpeak channel and 
+% visualize hourly PAR using the AREA function. 
    
-% Channel 12397 contains data from the MathWorks Weather Station, located 
-% in Natick, Massachusetts. The data is collected once every 15 seconds. 
-% Field 1 records westbound and Field 2 is eastbound cars. 
+
+% Field 1 records Inside the greenhouse and Field 2 is outside. 
    
 % Channel ID to read data from 
-readChannelID = 38629; 
+readChannelID = 1769653; 
    
 % Channel Read API Key   
 % If your channel is private, then enter the read API 
 % Key between the '' below:   
 readAPIKey = 'ROZLL6RP93CIW861'; 
    
-% Read traffic data for the last 33 hours in a timetable, including 
+% Read PAR data for the last 33 hours in a timetable, including 
 % timestamps for each measurement 
-carData = thingSpeakRead(readChannelID, 'Fields', [1 2], 'NumMinutes', 2000,...
+PARData = thingSpeakRead(readChannelID, 'Fields', [1 2], 'NumMinutes', 8000,...
                          'ReadKey', readAPIKey, 'Outputformat', 'Timetable');
    
 % Compute the hourly average of the data 
-aveCar = retime(carData, 'hourly', 'mean');
-   
-% Simplify the variables. Multiply by 240 to estimate the average number 
-% of cars per hour from 15 second averages. 
-eastCars = aveCar.DensityOfEastboundCars*240; 
-westCars = aveCar.DensityOfWestboundCars*240; 
+avePAR = retime(PARData, 'hourly', 'mean'); 
+inPAR = avePAR.A0; 
+outPAR = avePAR.A1; 
   
 % Plot the averaged data as an area plot. 
-area(aveCar.Timestamps,[eastCars, westCars]);
+area(avePAR.Timestamps,[inPAR, outPAR]);
 xlabel('Time');
 ylabel('Average PAR per Hour');
 legend({'Inside','Outside'});
