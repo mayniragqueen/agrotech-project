@@ -152,7 +152,7 @@ The number we calculated for the sensor with the 8.71 PAR sensetivity was multip
 
 # Data Analysis
 
-![image](https://user-images.githubusercontent.com/106690258/179473363-f07e3ace-7a31-4dfe-9e9e-659be9c45bfd.png)
+![image](https://user-images.githubusercontent.com/106690258/179583124-2665cb61-dcdb-41fd-afb5-349aaaf2e5d5.png)
 
 ## Our MATLAB code
 ```MATLAB
