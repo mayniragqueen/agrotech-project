@@ -144,7 +144,7 @@ Our code included the following libraries:
 2. WiFi.h
 3. ThingSpeak.h
 
-In addition in order to get the PAR value calibrated we needed to calaulate the factor using the next equation:
+In addition in order to get the PAR value calibrated we needed to calaulate the factor we multiply with after using the GAIN_SIXSTEEN analog to digital (refers to the ADC sensor)  using the next equations:
 
 ![image](https://user-images.githubusercontent.com/106690258/179368621-36eae3d2-d16f-4235-b652-ce90dced6720.png)
 
