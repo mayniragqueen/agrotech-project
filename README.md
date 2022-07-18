@@ -148,7 +148,7 @@ In addition in order to get the PAR value calibrated we needed to calaulate the 
 
 ![image](https://user-images.githubusercontent.com/106690258/179539884-622d268e-ebca-414b-a621-056adaa483c9.png)
 
-The number we calculated for the sensor with the 8.71 PAR sensetivity was multiplied with the average measurements per minute in order to reduce the noise we observed in the graphs.
+The number we calculated for the sensor with the 8.71 PAR sensetivity was multiplied with the average measurements per minute (we used average in order to reduce the noise we observed in the graphs).
 
 # Data Analysis
 
