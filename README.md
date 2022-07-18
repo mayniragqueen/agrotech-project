@@ -146,7 +146,7 @@ Our code included the following libraries:
 
 In addition in order to get the PAR value calibrated we needed to calaulate the factor we multiply with after using the GAIN_SIXSTEEN analog to digital (refers to the ADC sensor)  using the next equations:
 
-![image](https://user-images.githubusercontent.com/106690258/179368621-36eae3d2-d16f-4235-b652-ce90dced6720.png)
+![image](https://user-images.githubusercontent.com/106690258/179539884-622d268e-ebca-414b-a621-056adaa483c9.png)
 
 The number we calculated for the sensor with the 8.71 PAR sensetivity was multiplied with the average measurements per minute in order to reduce the noise we observed in the graphs.
 
