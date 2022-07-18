@@ -36,7 +36,7 @@ At first we coneccted the two RY-GH PHOTOSYNTHETICALLY EFFECTIVE RADIATION SENSO
 ![image](https://user-images.githubusercontent.com/106690258/178981331-0b54b38c-d5aa-462e-a72b-d49b5c27ed49.png)
 
 ## Our Circuit Diagram
-the connections were made on the the board according to the schematics down below:
+the connections were made on the the board according to the schematics down below (the lamps represent the RY-GH PHOTOSYNTHETICALLY EFFECTIVE RADIATION SENSORS):
 
 ![Circuit Diagram](https://user-images.githubusercontent.com/106690258/179476648-ef51a8bd-d6bd-4170-aa72-505e59307643.png)
 
