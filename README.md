@@ -1,5 +1,5 @@
 # Agrotech final Project 2022
-Measuring PAR outside and inside the greenhouse. PAR = Photosynthetically Active Radiation, the wavelengths of light within the visible range of 400 to 700 nanometers that are critical for photosynthesis.
+Measuring PAR outside and inside the greenhouse. PAR = Photosynthetically Active Radiation, the wavelengths of light within the visible range of 400 to 700 nanometers that are critical for photosynthesis. Knowing the PAR values outside and inside the greenhouse can help us make important descisions regarding the way we grow our plants.
 
 ![image](https://user-images.githubusercontent.com/106690258/179044073-31b28b74-fd6d-4be6-820d-0743e409548e.png)
 
