@@ -151,6 +151,9 @@ In addition in order to get the PAR value calibrated we needed to calaulate the 
 The number we calculated for the sensor with the 8.71 PAR sensetivity was multiplied with the average measurements per minute in order to reduce the noise we observed in the graphs.
 
 # Data Analysis
+
+![image](https://user-images.githubusercontent.com/106690258/179473363-f07e3ace-7a31-4dfe-9e9e-659be9c45bfd.png)
+
 ## Our MATLAB code
 ```MATLAB
 % Read PAR data past day from a ThingSpeak channel and 
@@ -180,7 +183,7 @@ outPAR = avePAR.A1;
 % Plot the averaged data as an area plot. 
 area(avePAR.Timestamps,[inPAR, outPAR]);
 xlabel('Time');
-ylabel('Average PAR per Hour');
+ylabel('Average PAR per Day');
 legend({'Inside','Outside'});
 ```
 
