@@ -38,7 +38,7 @@ At first we coneccted the two RY-GH PHOTOSYNTHETICALLY EFFECTIVE RADIATION SENSO
 ## Our Circuit Diagram
 the connections were made on the the board according to the schematics down below:
 
-![agrotech project](https://user-images.githubusercontent.com/106690258/179032479-2e69e00c-9ea2-48c6-b30d-cca44b3dfdd4.png)
+![Circuit Diagram](https://user-images.githubusercontent.com/106690258/179476648-ef51a8bd-d6bd-4170-aa72-505e59307643.png)
 
 
 # Our Arduino code
