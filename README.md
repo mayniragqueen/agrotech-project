@@ -152,7 +152,7 @@ The number we calculated for the sensor with the 8.71 PAR sensetivity was multip
 
 # Data Analysis
 
-![image](https://user-images.githubusercontent.com/106690258/179583124-2665cb61-dcdb-41fd-afb5-349aaaf2e5d5.png)
+![image]("https://user-images.githubusercontent.com/106690258/179733993-93381e80-7615-4d0b-859e-b81f5f725b4e.png">)
 
 ## Our MATLAB code
 ```MATLAB
@@ -183,7 +183,7 @@ outPAR = avePAR.A1;
 % Plot the averaged data as an area plot. 
 area(avePAR.Timestamps,[inPAR, outPAR]);
 xlabel('Time');
-ylabel('Average PAR per Day');
+ylabel('Average PAR per Hour');
 legend({'Inside','Outside'});
 ```
 
